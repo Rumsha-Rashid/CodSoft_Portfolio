@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="task3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer | Graphic Designer</p>
+            <h1>Hey, I'm<span> Rumsha</span></h1>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/rumsha-rashid-a0a38525a/"  target="_blank" ><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100031305306370" target="_blank"><i class='bx bxl-facebook'></i></box-icon></a>
+                <a href="https://www.instagram.com/rumsha._rashid/" target="_blank"><i class='bx bxl-instagram-alt' ></i></box-icon></a>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="about" id="about">
+    <div class="main">
+        <img src="images/main2.jpeg">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h5>Developer <span>& Designer</span></h5>
+            <p>I'm a dedicated undergraduate student pursuing a Bachelor's degree in Computer Science from University of Karachi (UBIT) , passionate about harnessing technology to solve real-world problems. I thrive on the challenge of staying at the forefront of this ever-evolving field and am committed to continuous learning. With a hunger for new skills and a willingness to embrace diverse opportunities, I'm eager to connect with professionals, mentors, and peers to further my journey in the world of computer science and explore new opportunities for growth and development.</p>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links"onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li>
+                    <span>Web Developer</span><br>Designing and Developing a website.
+                </li>
+                <li>
+                    <span>Graphic Designer</span><br>Designing Logos, Business cards, Flyers, Brochures etc.
+                </li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li>
+                    <span>2021 - Current</span><br>Bachelors of Computer Science <br>University of Karachi
+                </li>
+                <li>
+                    <span>2017 - 2019</span><br>A-levels <br>The American Foundation School
+                </li>
+                <li>
+                    <span>2015 - 2017</span><br>O-levels <br>Montessori Complex Cambridge School
+                </li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<div class="service" id="service">
+    <div class="title">
+        <h2>Services</h2>
+    </div>
+    <div class="box">
+        <div class="card">
+            <i class='bx bx-code-alt'></i>
+            <h5>Web Developer</h5>
+            <div class="para">
+                <p>Creative web developer dedicated to crafting visually stunning and user-friendly websites through innovative design and efficient coding.</p>
+                <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <i class='bx bxs-layer' ></i>
+            <h5>Graphic Designer</h5>
+            <div class="para">
+                <p>Versatile graphic designer with a passion for creating captivating visuals, blending creativity with technical expertise to deliver impactful designs.</p>
+                <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/calculator.jpg" >
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>Developed a calculator using HTML and CSS</p>
+                    <a href="http://127.0.0.1:5501/task1.html" target="_blank">
+                        <i class='bx bx-link-external' ></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/to-do-list.jpg" >
+                <div class="layer">
+                    <h3>To-Do List</h3>
+                    <p>Developed a to-do list manager using HTML, CSS and Javascript</p>
+                    <a href="http://127.0.0.1:5502/task2.html" target="_blank">
+                        <i class='bx bx-link-external' ></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/logos.png" >
+                <div class="layer">
+                    <h3>Logos and Business cards</h3>
+                    <p>Designed logos, brochures, business cards using Adobe Illustrator</p>
+                    <a href="#">
+                        <i class='bx bx-link-external' ></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="contact" id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea  name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+         for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+
+</body>
+
+</html>
